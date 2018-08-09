@@ -120,9 +120,9 @@ EOS
           require 'aws-sdk'
           logger = ::Logger.new($stdout)
           logger.level = ::Logger::DEBUG
+          format_level = ::AWS::Core::LogFormatter.debug
           ::AWS.config(
             logger: logger,
-            log_level: warn,
             log_formatter: ::AWS::Core::LogFormatter.debug
           )
         end
