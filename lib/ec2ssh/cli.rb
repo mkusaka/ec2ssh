@@ -123,7 +123,7 @@ EOS
           ::AWS.config(
             logger: logger,
             log_level: warn,
-            log_formatter: AWS::Core::LogFormatter.debug
+            log_formatter: ::AWS::Core::LogFormatter.debug
           )
         end
       end
